@@ -102,6 +102,7 @@ jobs:
               yarn --version
               cd /home/ubuntu/apps/build
               yarn install
+              yarn pm2
               if yarn pm2 show product-service > /dev/null; then
                 echo "Application is running. Restarting..."
                 yarn restart
