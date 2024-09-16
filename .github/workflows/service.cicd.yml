@@ -4,11 +4,11 @@ on:
   pull_request:
     branches: [main] # Specify branches as needed
     paths:
-      - "src/" # Adjust path to match the service directory
+      - "src/**" # Adjust path to match the service directory
   push:
     branches: [main] # Specify branches as needed
     paths:
-      - "src/" # Adjust path to match the service directory
+      - "src/**" # Adjust path to match the service directory
 jobs:
   build:
     runs-on: ubuntu-latest  # Specifies that the job should run on the latest Ubuntu virtual environment provided by GitHub
