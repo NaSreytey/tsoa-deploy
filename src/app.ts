@@ -20,7 +20,7 @@ const app = express();
 // Global Middleware
 // ========================
 app.use(express.json()); // Help to get the json from request body
-console.log("hello world")
+console.log("hello")
 // ========================
 // Global API V1
 // ========================
