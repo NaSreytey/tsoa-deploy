@@ -3,8 +3,8 @@ import path from "path";
 import Joi from "joi";
 
 type Config = {
-  port: number;
-  mongodbUrl: string;
+  PORT: number;
+  MONGODB_URL: string;
 };
 
 // Function to load and validate environment variables
@@ -30,8 +30,8 @@ function loadConfig(): Config {
 
   return {
 
-    port: envVars.PORT,
-    mongodbUrl: envVars.MONGODB_URL,
+    PORT: envVars.PORT,
+    MONGODB_URL: envVars.MONGODB_URL,
   };
 }
 

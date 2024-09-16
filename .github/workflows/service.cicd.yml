@@ -85,6 +85,8 @@ jobs:
             port: 22
             script: |
               echo "MONGODB_URL=${{secrets.MONGODB_URI}}" >> /home/ubuntu/apps/build/configs/.env
+              echo "MONGODB_PORT=${{secrets.MONGODB_PORT}}" >> /home/ubuntu/apps/build/configs/.env
+
 
         - name: Install Dependencies and Restart Application
           uses: appleboy/ssh-action@master  
