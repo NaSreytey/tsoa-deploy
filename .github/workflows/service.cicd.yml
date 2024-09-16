@@ -2,11 +2,11 @@ name: CI/CD Pipeline for Service
 
 on:
   pull_request:
-    branches: [master] # Specify branches as needed
+    branches: [main] # Specify branches as needed
     paths:
       - "withSwagger/" # Adjust path to match the service directory
   push:
-    branches: [master] # Specify branches as needed
+    branches: [main] # Specify branches as needed
     paths:
       - "withSwagger/" # Adjust path to match the service directory
 jobs:
